@@ -25,7 +25,13 @@ public class Singer {
 	
 	public String toString()
 	{
-		return firstName + " " + lastName;
+		StringBuilder builder=new StringBuilder();
+		builder.append("Singer[firstName=");
+		builder.append(this.firstName);
+		builder.append(", lastName=");
+		builder.append(this.lastName);
+		builder.append("]");
+		return builder.toString();
 	}
 
 }
