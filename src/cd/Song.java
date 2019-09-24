@@ -13,6 +13,14 @@ public class Song{
 		this(title, length, new Signer(fName, lName));
 	}
 	
+	public String getFirstName(){
+		return this.singer.getFirstName();
+	}
+	
+	public String getLastName(){
+		return this.singer.getLastName();
+	}
+	
 	@Overide
 	public String toString(){
 		StringBuilder builder=new StringBuilder();
